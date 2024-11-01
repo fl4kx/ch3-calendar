@@ -1,4 +1,5 @@
 # Calendar 일정 관리
+일정을 관리하는 어플리케이션 입니다.
 
 ### API 명세서
 | 기능           | Method | URL                     | Request                                                                                                        | Response                                                                                                                                                                                                                                                                                                                                                                                                | 상태코드      |
@@ -10,3 +11,4 @@
 | 일정 삭제      | DELETE | /schedules/{scheduleId} | {<br>&ensp; "password" : "0000"<br>}                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                         | 200: 정상삭제 |
 
 ### ERD
+![ERD](https://github.com/user-attachments/assets/1b8331cc-6e0d-4dad-9500-b848d6b05299)
