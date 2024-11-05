@@ -4,8 +4,7 @@
 
 ### API 명세서
 
-![api12](https://github.com/user-attachments/assets/b5243847-e10d-4da4-9953-c6e9ffbf64cd)
-
+![API](https://github.com/user-attachments/assets/62c4cd88-c14e-4a8c-a942-0e3e750e3ce5)
 
 ### ERD
 
@@ -25,22 +24,25 @@ VALUES (0, 'hyeon', '일정1' ,20241101, 20241101);
 
 #### 전체 일정 조회
 
-SELECT * 
+SELECT author,
+       title,
+       registration_date,
+       modified_date
 FROM SCHEDULES;
 
 #### 일정 조회
 
-SELECT id
+SELECT id, 
 FROM SCHEDULES;
 
 #### 일정 수정
 
 UPDATE SCHEDULES
 SET title = '변경된 일정1'
-WHERE title = '일정1';
+WHERE id = 0;
 
 #### 일정 삭제
 
 DELETE
 FROM SCHEDULES
-WHERE title = '변경된 일정1';
+WHERE id = 0;
